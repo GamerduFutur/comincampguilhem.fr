@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mairie de Goûts-Rossignol - Comin-Campguilhem Architecte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo-link">
+            <img src="logo.png" alt="Studio Logo" class="logo-img">
+        </a>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="agence.html">L'Agence</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu Projet -->
+    <div class="project-detail-container">
+        <!-- Titre du projet -->
+        <h1 class="project-detail-title">Mairie de Goûts-Rossignol</h1>
+
+        <!-- Slider d'images -->
+        <div class="project-slider">
+            <div class="slider-track">
+                <div class="project-slide active">
+                    <img src="images/projects/mairegoutsrossignol/img1.png" alt="Erreur dans le chargement de l'image">
+                </div>
+                <div class="project-slide">
+                    <img src="images/projects/mairegoutsrossignol/img2.png" alt="Erreur dans le chargement de l'image">
+                </div>
+                <div class="project-slide">
+                    <img src="images/projects/mairegoutsrossignol/img3.png" alt="Erreur dans le chargement de l'image">
+                </div>
+                <div class="project-slide">
+                    <img src="images/projects/mairegoutsrossignol/img4.png" alt="Erreur dans le chargement de l'image">
+                </div>
+                <div class="project-slide">
+                    <img src="images/projects/mairegoutsrossignol/img5.png" alt="Erreur dans le chargement de l'image">
+                </div>
+                <div class="project-slide">
+                    <img src="images/projects/mairegoutsrossignol/img6.png" alt="Erreur dans le chargement de l'image">
+                </div>
+                <div class="project-slide">
+                    <img src="images/projects/mairegoutsrossignol/img7.png" alt="Erreur dans le chargement de l'image">
+                </div>
+            </div>
+            <!-- Zone cliquable gauche -->
+            <div class="slider-zone slider-zone-left" onclick="changeSlide(-1)"></div>
+            <!-- Zone cliquable droite -->
+            <div class="slider-zone slider-zone-right" onclick="changeSlide(1)"></div>
+        </div>
+
+        <!-- Informations du projet -->
+        <div class="project-info-section">
+            <ul class="project-info-list">
+                <li><strong>Lieu :</strong>24320 Gout-Rossignol</li>
+                <li><strong>MOA :</strong>Commune de Gout-Rossignol</li>
+                <li><strong>Mission :</strong>Complète</li>
+                <li><strong>Programme :</strong>Mairie (rénovation + extension)</li>
+                <li><strong>Surface :</strong>318 m²</li>
+                <li><strong>Coût :</strong>392 600 € HT</li>
+                <li><strong>Avancement :</strong>Livré en 2025</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Comin-Campguilhem, <a href="https://jcwebstudios.netlify.app">JCWeb Studios</a> et <a href="https://www.agence-ce.com/">Agence CE</a>. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

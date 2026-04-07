@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pôle culturel du Buisson-de-Cadouin - Comin-Campguilhem Architecte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html" class="logo-link">
+            <img src="logo.png" alt="Studio Logo" class="logo-img">
+        </a>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Projets</a></li>
+            <li><a href="agence.html">L'Agence</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenu Projet -->
+    <div class="project-detail-container">
+        <!-- Titre du projet -->
+        <h1 class="project-detail-title">Pôle culturel du Buisson-de-Cadouin</h1>
+
+        <!-- Slider d'images -->
+        <div class="project-slider">
+            <div class="slider-track">
+                <div class="project-slide active">
+                    <img src="images/projects/poleBDC/img1.png" alt="Erreur dans le chargement de l'image">
+                </div>
+            </div>
+            <!-- Zone cliquable gauche -->
+            <div class="slider-zone slider-zone-left" onclick="changeSlide(-1)"></div>
+            <!-- Zone cliquable droite -->
+            <div class="slider-zone slider-zone-right" onclick="changeSlide(1)"></div>
+        </div>
+
+        <!-- Informations du projet -->
+        <div class="project-info-section">
+            <ul class="project-info-list">
+                <li><strong>Lieu :</strong>24480 Buisson-de-Cadouin</li>
+                <li><strong>MOA :</strong>Commune du Buisson-de-Cadouin</li>
+                <li><strong>Mission :</strong>Complète</li>
+                <li><strong>Programme :</strong>Médiathèque</li>
+                <li><strong>Surface :</strong>502 m²</li>
+                <li><strong>Coût :</strong>956 000 € HT</li>
+                <li><strong>Avancement :</strong>DCE en cours</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Comin-Campguilhem, <a href="https://jcwebstudios.netlify.app">JCWeb Studios</a> et <a href="https://www.agence-ce.com/">Agence CE</a>. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
