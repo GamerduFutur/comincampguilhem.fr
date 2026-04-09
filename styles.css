@@ -430,12 +430,12 @@ nav a:hover {
 
 .slider-zone-left {
     left: 0;
-    cursor: url(previous.png), pointer;
+    cursor: url(previous.webp), pointer;
 }
 
 .slider-zone-right {
     right: 0;
-    cursor: url(next.png), pointer;
+    cursor: url(next.webp), pointer;
 }
 
 /* Informations Projet */
