@@ -40,7 +40,7 @@ nav.scrolled {
 .logo-img {
     height: 40px;
     width: auto;
-    display: block; 
+    display: block;
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(200%) contrast(200%);
     transition: filter 0.3s;
 }
@@ -57,7 +57,7 @@ body.home nav.scrolled .logo-img {
     font-size: 24px;
     font-weight: bold;
     color: #fff;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: color 0.3s, text-shadow 0.3s;
 }
 
@@ -78,7 +78,7 @@ body.home nav.scrolled {
 
 body.home .logo {
     color: #fff;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 body.home nav.scrolled .logo {
@@ -88,7 +88,7 @@ body.home nav.scrolled .logo {
 
 body.home nav a {
     color: #fff;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 body.home nav.scrolled a {
@@ -98,7 +98,7 @@ body.home nav.scrolled a {
 
 body.home .menu-toggle span {
     background: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 body.home nav.scrolled .menu-toggle span {
@@ -207,7 +207,7 @@ nav a:hover {
     position: relative;
     overflow: hidden;
     border-radius: 2px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     aspect-ratio: 4/3;
     text-decoration: none;
@@ -233,7 +233,7 @@ nav a:hover {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
     color: white;
     padding: 10px 15px;
     transform: translateY(0);
@@ -342,7 +342,7 @@ nav a:hover {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 5px 10px;
     border-radius: 3px;
@@ -481,6 +481,30 @@ nav a:hover {
     color: #666;
 }
 
+.project-info-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 0 50px 60px;
+    width: 100%; /* plus de max-width */
+}
+
+.project-info-section {
+    padding: 0;
+    flex: 0 0 45%; /* prend 45% de la largeur */
+    min-width: 0;
+}
+
+.project-description {
+    flex: 0 0 40%; /* prend 40% */
+    min-width: 0; /* empêche le débordement */
+    text-align: justify;
+    color: #666;
+    line-height: 1.8;
+    padding-top: 12px;
+}
+
 /* Footer */
 footer {
     background: transparent;
@@ -499,7 +523,7 @@ body.home footer {
     bottom: 0;
     width: 100%;
     color: #fff;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     font-size: 11px;
     padding: 15px 50px;
     z-index: 998;
@@ -524,12 +548,12 @@ body:not(.home) footer a {
     nav {
         padding: 12px 20px;
     }
-    
+
     .logo-link {
         z-index: 1002;
         position: relative;
     }
-    
+
     .logo-img {
         height: 32px;
     }
@@ -550,10 +574,10 @@ body:not(.home) footer a {
         justify-content: center;
         align-items: center;
     }
-    
+
     nav ul a {
         color: #fff !important;
-        text-shadow: 0 2px 4px rgba(0,0,0,0.5) !important;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
         font-size: 24px;
         font-weight: 500;
     }
@@ -562,9 +586,9 @@ body:not(.home) footer a {
         background: rgba(255, 255, 255, 0.65);
         backdrop-filter: blur(30px);
     }
-    
+
     body:not(.home) nav ul a {
-        color: rgba(0,0,0,0.8) !important;
+        color: rgba(0, 0, 0, 0.8) !important;
         text-shadow: none !important;
     }
 
@@ -595,31 +619,41 @@ body:not(.home) footer a {
     .project-detail-container {
         padding-top: 60px;
     }
-    
+
     .project-detail-title {
         font-size: 24px;
         margin-bottom: 15px;
         padding: 0 20px;
     }
-    
+
     .project-slider {
         height: calc(100vh - 200px);
         margin-bottom: 30px;
     }
-    
+
     .project-info-section {
         padding: 0 20px 50px;
     }
-    
+
     .project-info-list li {
         font-size: 14px;
         padding: 10px 0;
     }
 
+    .project-info-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px 50px;
+    }
+
+    .project-description {
+        text-align: justify;
+    }
+
     footer {
         padding: 30px 20px;
     }
-    
+
     body.home footer {
         padding: 15px 20px;
         font-size: 10px;
